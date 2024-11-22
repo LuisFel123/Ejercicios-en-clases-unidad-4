@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Resultados de la ecuación cuadrática</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:outputText value="Ecuación: #{ecuacion.ca}x² + #{ecuacion.cb}x + #{ecuacion.cc}" />
+            <h:panelGrid columns="4">
+                <h:outputLabel value="X1:" />
+                <h:outputText value="#{ecuacion.x1}" />
+                <h:outputLabel value="X2:" />
+                <h:outputText value="#{ecuacion.x2}" />
+            </h:panelGrid>
+            <h:commandButton value="Calcular otra ecuación" action="index" />
+        </h:form>
+    </h:body>
+</html>
